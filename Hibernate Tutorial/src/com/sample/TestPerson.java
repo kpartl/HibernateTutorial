@@ -50,7 +50,7 @@ public class TestPerson {
 
         session.save(person);
         
-         person = new Person();
+        person = new Person();
         
         person.setName("Karel");
         person.setSurname("Pártl");       
