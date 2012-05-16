@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.sample.Person" table="Person">
+
+        <id name="id" column="ID">
+            <generator class="native" />
+        </id>
+
+        <property name="name">
+            <column name="NAME" length="16" not-null="true" />
+        </property>
+
+        <property name="surname">
+            <column name="SURNAME" length="16" not-null="true" />
+        </property>
+
+        <property name="address">
+            <column name="ADDRESS" length="16" not-null="true" />
+        </property>
+
+    </class>
+</hibernate-mapping>
