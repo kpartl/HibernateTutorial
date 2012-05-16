@@ -11,7 +11,7 @@ import org.hibernate.Session;
 
 public class TestPerson {
 
-    static final Logger logger = Logger.getLogger(TestPerson.class);
+    static final Logger log = Logger.getLogger(TestPerson.class);
 	public static void main(String[] args) {
         Session session = SessionFactoryUtil.getSessionFactory().getCurrentSession();
 
@@ -60,7 +60,7 @@ public class TestPerson {
     }
     
     public static void deletePerson(Session session, Person person) {
-    	logger.info("Mazu osobu: " + person);
+    	log.info("Mazu osobu: " + person);
     	session.delete(person);
     
     }
